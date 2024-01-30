@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los amigos</title>
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="form-content">
+            <h1 id="titulo">Inicio de sesion</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-filed" id="nameInput">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Nombre">
+                    </div>
+                    <div class="input-filed" id="emailInput">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Correo">
+                    </div>
+                    <div class="input-filed" id="passwordInput">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Contraseña">
+                    </div>
+                    <p>Olvidate tu contraseña</p> <a href="#"> Click aqui</a>
+                </div>
+                <div>
+                    <div class="btn-field">
+                        <button id="signUp" type="button">Registro</button>
+                        <button id="signIn" type="button" class="disable">Login</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="formulario.js"></script>
+</body>
+</html>

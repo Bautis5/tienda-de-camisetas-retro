@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los amigos</title>
+    <link rel="stylesheet" href="tienda.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo"><a href="index.html">Retro Shirts España</a></p>
+            <nav>
+                <a href="quienes_somos.html">Quienes Somos</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="donde_encontranos.html">Donde Encotrarnos</a>
+                <a href="formulario.html">Iniciar sesión</a>
+                
+            </nav>
+        </div>
+    </header>
+    <section id="hero">
+        
+        <h1 class="h1" >Las mejores camisetas de España</h1>
+
+    </section>
+    <section id="camisetas_importantes">
+        <div class="container">
+        <h2>Tienda</h2>
+        <div class="producto" id="producto">   
+            <div class="camisetas">
+                
+                    <div class="carta">
+                        <h3>Camiseta Iniesta</h3>
+                        <p></p>
+                        <button onclick="agregarAlCarrito('Camiseta Iniesta', 60, 'url-imagenes/andres-iniesta-of-spain-celebrates-at-the-final-whistle-news-photo-1594194695.jpg')">Comprar</button>
+
+
+                    </div>
+                
+                
+                    <div class="carta">
+                        <h3>Camiseta Messi</h3>
+                        <p></p>
+                        <button onclick="agregarAlCarrito('Camiseta Messi', 60,' url-imagenes/messi bn.jpg')">Comprar</button>
+                    </div>
+               
+                
+                    <div class="carta">
+                        <h3>Camiseta Maradona</h3>
+                        <p></p>
+                        <button onclick="agregarAlCarrito('Camiseta Maradona', 60,' url-imagenes/maradona bn.jpg')">Comprar</button>
+                    </div>
+                
+            </div>
+            
+
+        </div>
+    
+    </section>
+
+    <section id="camisetas_importantes">
+        <div class="container">
+            <div class="producto" id="producto">
+                <div class="camisetas">
+                    
+                        <div class="carta2">
+                            <h3>Camiseta Robben</h3>
+                            <p></p>
+                            <button onclick="agregarAlCarrito('Camiseta Robben', 60,' url-imagenes/robben.jpg')">Comprar</button>
+                        </div>
+                    
+                
+                        <div class="carta2">
+                            <h3>Camiseta CR7</h3>
+                            <p></p>
+                            <button onclick="agregarAlCarrito('Camiseta CR7', 60,' url-imagenes/cr7.jpg')">Comprar</button>
+                        </div>
+                    
+                    <div class="producto" id="producto">
+                        <div class="carta2">
+                            <h3>Camiseta Godin</h3>
+                            <p></p>
+                            <button onclick="agregarAlCarrito('Camiseta Godin', 60,' url-imagenes/godin bn.jpg')">Comprar</button>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="carrito_compras">
+        <div class="container">
+            <div id="carrito">
+                <h2>Carrito de Compras</h2>
+                
+                <div id="itemsCarrito"></div>
+            </div>
+            
+            <section id="carrito">
+                <div class="container2"> 
+                    
+                    <div id="itemsCarrito">
+                    <button onclick="vaciarCarrito()">Vaciar Carrito</button></div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; Los amigos</p>
+        </div>
+    </footer>
+<script src="carrito.js"></script>
+</body>

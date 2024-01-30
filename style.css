@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+
+
+
+h1{
+    font-size: 50px
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 20px;
+}
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 5px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: goldenrod;
+}
+
+button:hover{
+    background-color: rgb(161, 123, 24);
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color: rgb(245, 245, 245);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: goldenrod;
+    font-size: 1.5em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: goldenrod
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/descarga.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+
+#como_empezamos .container{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+#las_mejores_camisetas{
+    background-color: rgba(30,30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#las_mejores_camisetas .container{
+    padding: 100px 0px;
+}
+
+#las_mejores_camisetas h3{
+    margin-top: 0;
+}
+
+#las_mejores_camisetas p{
+    display: none;
+}
+
+.camisetas_importantes:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/andres-iniesta-of-spain-celebrates-at-the-final-whistle-news-photo-1594194695.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    background-size: cover;
+}
+
+.camisetas_importantes:nth-child(2){
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/maradona\ bn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    background-size: cover;
+}
+
+.camisetas_importantes:nth-child(3){
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/messi\ bn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    background-size: cover;
+}
+footer{
+    background-color: rgb(230, 230, 230);
+    }
+footer p{
+        margin: 0;
+        padding: 12px;
+        color: rgb(100, 100, 100);
+ }
+footer .container{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+
+    }
+
+    #como_empezamos .container h2{
+        color: white
+    }
+
+    #como_empezamos .container p{
+        color: white
+    }
+    #como_empezamos .container{
+        
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("imagenes/seleccion\ española.webp");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        padding: 70px;
+        margin: 20px 0px;
+        border-radius: 15px;
+    }
+    #camisetas_importantes .camisetas_importantes_pc{
+        display: flex;
+        justify-content: center; 
+    }
+    #camisetas_importantes p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #camisetas_importantes h3{
+        margin-top: 0;
+    }
+    #camisetas_importantes .camisetas_importantes_pc{
+        padding: 150px;
+        margin: 0px 20px;
+    }
+}

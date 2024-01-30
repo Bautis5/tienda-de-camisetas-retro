@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: goldenrod;
+    font-size: 1.5em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: goldenrod
+}
+
+h1{
+    font-size: 50px
+}
+
+h2{
+    font-size: 30px;
+}
+
+button{
+    background-color: rgb(161, 123, 24);
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 5px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: goldenrod;
+}
+button:hover{
+    background-color: rgb(161, 123, 24);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/descarga.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#donde_encontranos .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/mapa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+#donde_encontrarnos :hover h2{
+    color: white;
+    color: goldenrod;
+    
+}
+#dodende_encontrarnos{
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+
+footer{
+    background-color: rgb(230, 230, 230);
+    }    
+footer p{
+        margin: 0;
+        padding: 12px;
+        color: rgb(100, 100, 100);
+    }
+footer .container{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+
+    }
+}
+    
