@@ -28,12 +28,26 @@
         <a href="tienda.html"><button>Compra ya</button></a>
     </section>
    
-    <section id="como_empezamos">
-        <div class="container">  
-            <div class="imagen_como_empezamos"></div>
-            <h2>Como empezamos</h2>
-            <p> Esta tienda empezo siendo una cmaisetas que vendiamos por vinted hasta que vimos que cada vez vendiamos mas y decidimos montar nuestra propia tienda empezando por la pagian web y acabdo con la tienda fisica en Madrid</p>
-        </div> 
+    <section id="slider_continer">
+        <div class="container">
+            <div class="slider">
+                <div class="slides">
+                
+                  <div class="slide" id="slide1">
+                    <img src="./imagenes/alemania.jpeg" alt="Image 1">
+                  </div>
+                  <div class="slide" id="slide2">
+                    <img src="./imagenes/betis.jpeg" alt="Image 2">
+                  </div>
+                  <div class="slide" id="slide3">
+                    <img src="./imagenes/Holanda.jpeg" alt="Image 3">
+                  </div>
+                  
+                </div>
+                <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                <a class="next" onclick="moveSlide(1)">&#10095;</a>
+              </div>
+        </div>
     </section>
 
     <section id="las_mejores_camisetas">
@@ -65,5 +79,6 @@
             <p>&copy; Los amigos</p>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

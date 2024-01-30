@@ -95,12 +95,63 @@ header a:hover{
     color: white;
 }
 
-
-#como_empezamos .container{
-    text-align: center;
-    padding: 200px 12px;
-
+#slider_continer .container{
+    margin: 50px;
 }
+.slider {
+    position: relative;
+    width: 95vw; 
+    overflow: hidden;
+  }
+  
+ 
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+ 
+  .slide {
+    width: 100%;
+    flex: 0 0 auto; 
+  }
+  
+  
+  .slide img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+    background-size: cover;
+  }
+  
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    z-index: 100;
+  }
+  
+
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+
+  .slider {
+    height: 50vh; /
+  }
+  
+
 
 #las_mejores_camisetas{
     background-color: rgba(30,30,30,30);
